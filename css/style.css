@@ -1,0 +1,275 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+    height: 1478px;
+    background-color: #ffff;
+}
+
+ul {
+    margin: 0;
+    background-color: #098587;
+    height: 40px;
+    padding-left: 0;
+}
+
+ul li {
+    display: inline-block;
+    line-height: 40px;
+    transition: 1s ease;
+}
+
+ul li:hover i {
+    transform: rotate(20deg);
+}
+
+ul li:hover .list-i {
+    transform: rotate(0deg);
+}
+
+ul li a {
+    padding: 20px;
+    text-decoration: none;
+    color: antiquewhite;
+    font-weight: 300;
+}
+
+.sign-in,
+.sign-up {
+    float: right;
+    font-size: 17px;
+}
+
+.sign-up {
+    padding-left: 8px;
+}
+
+.social-icons i {
+    color: #fff;
+    font-size: 17px;
+    width: 30px;
+    height: 21px;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 23px
+}
+
+header {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+
+.main-head {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.first-part {
+    width: 50%;
+    float: left;
+    padding-top: 140px;
+}
+
+.second-part {
+    width: 50%;
+    margin-top: 25px;
+    float: left;
+    height: 380px;
+}
+
+.second-part img {
+    width: 100%;
+    height: 100%;
+}
+
+.first-part h2 {
+    font-family: 'Fredoka One', cursive;
+    font-weight: 900;
+    color: #4fd6c9;
+    height: 44px;
+    line-height: 40px;
+    width: 280px;
+    margin: 0 auto;
+    font-size: 50px;
+    /* border-left: 10px solid #FF9800; */
+}
+
+.first-part h2 span {
+    color: gold;
+    margin-left: -28px;
+    font-family: 'Lalezar', cursive;
+}
+
+.first-part p {
+    margin-top: 3px;
+    font-size: 30px;
+    color: #3a5e6bb3;
+    font-family: 'Lalezar', cursive;
+}
+
+
+/*our life section*/
+
+.our-life {
+    margin: 0 auto;
+    width: 100%;
+    height: 280px;
+    text-align: center
+}
+
+.part-one,
+.part-two,
+.part-three,
+.part-four {
+    width: 25%;
+    float: left;
+    height: 100%;
+    margin-bottom: 85px;
+}
+
+.part-two img,
+.part-three img {
+    border-left: 1px solid #59c8cb;
+}
+
+.our-life img {
+    width: 100%;
+    height: 70%;
+    margin-top: 20px;
+    transition: 0.8s ease-in-out;
+}
+
+.our-life img:hover {
+    width: 100%;
+    height: 80%;
+    margin-top: 20px;
+}
+
+.our-life h2 {
+    color: #fff;
+    background-color: #FF9800;
+    width: 180px;
+    border-left: 20px solid #1a596a;
+    margin: 0 auto;
+}
+
+footer {
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+    color: #fff;
+    padding: 5px 0;
+    border: 1px solid gold;
+    margin-bottom: 5px;
+}
+
+footer .email {
+    color: black;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+
+/* Media Queries*/
+
+@media (max-width:700px) {
+    .list,
+    .social-icons {
+        display: inline-block;
+    }
+    .list:hover {
+        background-color: #098587;
+    }
+    ul li a {
+        padding: 1px;
+    }
+    .youtube {
+        margin-right: 2px;
+    }
+    .list {
+        margin-left: 8%;
+    }
+    .social-icons {
+        float: right;
+    }
+    .font-links,
+    .sign-in,
+    .sign-up {
+        display: none;
+    }
+}
+
+@media (min-width:700px) {
+    .list,
+    .social-icons {
+        display: none
+    }
+}
+
+@media (max-width:710px) {
+    .container {
+        height: 1640px;
+    }
+    .second-part,
+    .first-part {
+        width: 100%;
+    }
+    .second-part {
+        margin-bottom: 140px;
+    }
+}
+
+@media (max-width:600px) {
+    .container {
+        width: 100%;
+        height: 2275px;
+    }
+    .part-one,
+    .part-two,
+    .part-three,
+    .part-four {
+        width: 49%;
+        float: left;
+        height: 100%;
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width:513px) {
+    .part-one,
+    .part-two,
+    .part-three,
+    .part-four {
+        width: 99%;
+        float: left;
+        height: 100%;
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width:300px) {
+    .first-part h2 {
+        font-family: 'Fredoka One', cursive;
+        font-weight: 900;
+        color: #4fd6c9;
+        height: 44px;
+        line-height: 40px;
+        width: 224px;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 42px;
+        border-left: 10px solid #FF9800;
+    }
+    .first-part p {
+        font-size: 23px;
+    }
+}
